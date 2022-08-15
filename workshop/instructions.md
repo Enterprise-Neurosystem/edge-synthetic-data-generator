@@ -6,6 +6,8 @@
 * [Log into RHODS](#logging-into-rhods)
 * [Git Clone the Edge Synthetic Generator Project](#git-clone-the-edge-synthetic-generator-project)
 * [Generate Sensor Data](#generate-sensor-data)
+* [Select Slice](#select-slice)
+* [Stream Sensor Data](#stream-sensor-data)
 
 </p>
 </details>
@@ -58,13 +60,34 @@
 
     ![](/workshop/images/generate_sensor_data.png)
 
-3.  Select the Run menu, then the last option, **Restart Kernel and Run All Cells** which will: 
-    * Prompt the pretrained model, `dgan_model_5_48_sensors.pt`, to generate 1000 samples of 12 hour slices of data. 
-    * Plot some of the synthetic data. 
-    * Attach a timestamp to each instance of synthetic data, thereby making it time series data.
-    * Stream a slice of the synthetic data via Apache Kafka to the sensor failure prediction model for ingestion. 
+3.  Run cells 1-6 by selecting each one and clicking the run button. 
 
-         ![](/workshop/images/restart_kernel.png)
+    ![](/workshop/images/run_cells.png)
+
+## Select Slice
+
+1. Once you run the first 6 cells and reach the section titled **Selecting your slice**, enter in your slice number in the following cell. For example, if your slice number is 13, your code should resemble the following:
+
+    ![](/workshop/images/select_slice.png)
+
+2. After inputting your slice number, run the cell to plot the sensor data for that slice:
+
+    ![](/workshop/images/slice_13_plot.png)
+
+## Stream Sensor Data
+Now that you've selected a slice of synthetic data, it's time for you to stream your data via Apache Kafka to the sensor failure prediction model for ingestion. 
+
+1. First, attach a fake timestamp to each instance of synthetic data, making it time series data, by running the first four cells in this section. 
+
+    ![](/workshop/images/streaming_sensor_data.png)
+
+2. Now that you've transformed your data into time series data, define the Kafka cluster credentials by running the following cell:
+  
+    ![](/workshop/images/kafka_connect.png)
+
+3. Finally, stream your data by running the remaining two cells, which (1) connects to the Kafka cluster based on the credentials you defined in the previous step, (2) initializes a KafkaProducer object, (3) streams your data to the sensor failure prediction model.
+
+    ![](/workshop/images/produce_data.png)
 
 
 
