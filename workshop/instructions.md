@@ -78,7 +78,6 @@
 Now that you've selected a slice of synthetic data, it's time for you to stream your data via Apache Kafka to the sensor failure prediction model for ingestion. 
 
 1. First, attach a fake timestamp to each instance of synthetic data, making it time series data, by running the first four cells in this section. 
-
     ![](/workshop/images/streaming_sensor_data.png)
 
 2. Now that you've transformed your data into time series data, define the Kafka cluster credentials by running the following cell:
