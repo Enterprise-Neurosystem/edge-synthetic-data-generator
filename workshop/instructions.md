@@ -38,7 +38,7 @@
 
     ![](/workshop/images/jupyterhub_nb.png)
 
-7. Click on "Start Server"
+7. Click on **Start Server**
 
 ## Git Clone the Edge Synthetic Generator Project 
 1. Click on the Git icon on the left of your JupyterHub notebook. 
@@ -60,13 +60,20 @@
 
     ![](/workshop/images/generate_sensor_data.png)
 
-3.  Run cells 1-6 by selecting each one and clicking the run button. 
+3.  Run the first cell to install the required packages for this workshop by selecting it and clicking on the run button.
 
     ![](/workshop/images/run_cells.png)
 
+4. Next, in the following cell, replace **None** with the GROUP_ID number provided to you and run it.
+
+    ![](/workshop/images/group_id.png)
+
+5. Afterwards, select and run cells 3-7 to generate synthetic data from a pre-trained model and plot some slices of it.
+
+
 ## Select Slice
 
-1. Once you run the first 6 cells and reach the section titled **Selecting your slice**, enter in your slice number in the following cell. For example, if your slice number is 13, your code should resemble the following:
+1. Once you run the first 7 cells and reach the section titled **Selecting your slice**, enter in your slice number in the following cell. For example, if your slice number is 13, your code should resemble the following:
 
     ![](/workshop/images/select_slice.png)
 
