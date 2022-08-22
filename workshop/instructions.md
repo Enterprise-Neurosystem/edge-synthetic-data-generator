@@ -41,13 +41,18 @@
 7. Click on **Start Server**
 
 ## Git Clone the Edge Synthetic Generator Project 
-1. Click on the Git icon on the left of your JupyterHub notebook. 
+1. On the left side of the navigation pane, locate the explorer panel. This panel is where you can create and manage your project directories. Go into the root directory of your JupyterLab enviroment by locating clicking the Folder icon.
 
-2. Click on the **Clone a Repository** button.
+    ![](/workshop/images/directory.png)
+
+2. Click on the Git icon on the left of your JupyterHub notebook.
+
+
+3. Click on the **Clone a Repository** button.
 
     ![](/workshop/images/git_clone.png)
 
-3. Paste the following URL and click **Clone**.
+4. Paste the following URL and click **Clone**.
  
     ```
     https://github.com/Enterprise-Neurosystem/edge-synthetic-data-generator.git
@@ -81,19 +86,9 @@
 
     ![](/workshop/images/slice_13_plot.png)
 
-## Stream Sensor Data
-Now that you've selected a slice of synthetic data, it's time for you to stream your data via Apache Kafka to the sensor failure prediction model for ingestion. 
+3. You are now finished with this part of the workshop. Next, you will be looking at how we 
+[predict anomaly failure](https://github.com/Enterprise-Neurosystem/edge-prediction-failure/blob/main/workshop/instructions.md). 
 
-1. First, attach a fake timestamp to each instance of synthetic data, making it time series data, by running the first four cells in this section. 
-    ![](/workshop/images/streaming_sensor_data.png)
-
-2. Now that you've transformed your data into time series data, define the Kafka cluster credentials by running the following cell:
-  
-    ![](/workshop/images/kafka_connect.png)
-
-3. Finally, stream your data by running the remaining two cells, which (1) connects to the Kafka cluster based on the credentials you defined in the previous step, (2) initializes a KafkaProducer object, (3) streams your data to the sensor failure prediction model.
-
-    ![](/workshop/images/produce_data.png)
 
 
 
