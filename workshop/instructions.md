@@ -7,14 +7,13 @@
 * [Git Clone the Edge Synthetic Generator Project](#git-clone-the-edge-synthetic-generator-project)
 * [Generate Sensor Data](#generate-sensor-data)
 * [Select Slice](#select-slice)
-* [Stream Sensor Data](#stream-sensor-data)
 
 </p>
 </details>
 
 ## Log into RHODS
 
-1. Go to the [OpenShift console](https://console-openshift-console.apps.ieee.8goc.p1.openshiftapps.com/) and click on **WorkshopAttendees** and log in with your credentials.
+1. Go to the [OpenShift console](https://console-openshift-console.apps.ieee.d7se.p1.openshiftapps.com/) and click on **WorkshopAttendees** and log in with your credentials.
 
     ![](/workshop/images/workshop_attendees.png)
 
