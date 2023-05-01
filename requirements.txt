@@ -1,0 +1,3 @@
+-r notebooks/requirements.txt
+black[jupyter]
+jupyterlab
