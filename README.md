@@ -23,12 +23,13 @@ However, `requirements.txt` is provided with full python packages/versions for u
 
 ## Structure
 
-    ├── data                    # Data files used for model training and plots.
-    ├── exploratory-notebooks   # Initial notebooks, testing data generation methods.
-    ├── models                  # A few saved, pretrained DGAN models.
-    ├── 12_generate_sensor_data # Primary nb used to create and stream synthetic data.
+    ├── data                            # Data files used for model training and plots.
+    ├── docs                            # Documentation and workshop info
+    ├── models                          # A few saved, pretrained DGAN models.
+    ├── notebooks                       # Initial notebooks, testing data generation methods.
+    ├── 12-generate-sensor-data.ipynb   # Primary nb used to create and stream synthetic data.
     ├── LICENSE
-    ├── requirements.txt        # Standard python requirements file.
+    ├── requirements.txt                # Standard python requirements file.
     └── README.md
 
-Note that some early notebooks in explanatory-notebooks require downloading dataset from kaggle (linked in code) and some point to models that you must train yourself (typically in the prior notebook). These notebooks are intended to show other methods of synthetic data generation that didn't work for our use case, but may be of use for others.
+Note that some early notebooks in explanatory-notebooks require downloading dataset from Kaggle (linked in code) and some point to models that you must train yourself (typically in the prior notebook). These notebooks are intended to show other methods of synthetic data generation that didn't work for our use case, but may be of use for others.
